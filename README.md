@@ -1,25 +1,33 @@
-# ReduxSimpleStarter
+# React-Redux City Weather App
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+This application was created following @stephenGrider 's Udemy course [Redux](https://www.udemy.com/react-redux/).
 
-### Getting Started
+This purpose of this application was to understand the way that Redux manages
+state with React applications.
 
-There are two methods for getting started with this repo.
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+### To Run
 
 ```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
+> git clone https://github.com/ljones140/react_redux_weather_app.git
+> cd react_redux_weather_app
+```
+
+You will need to obtain an Open Weather API key from:
+https://openweathermap.org/forecast5
+
+The API key then needs to be added to the application in:
+
+```
+src/actions/index.js
+const API_KEY = 'put api key here';
+```
+
+Then download the NPM dependencies and start the application
+
+```
 > npm install
 > npm start
 ```
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
+The app will be runnon on localhost:8080
